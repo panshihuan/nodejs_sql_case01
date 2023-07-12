@@ -1,0 +1,33 @@
+{
+  "name": "api_server",
+  "version": "1.0.0",
+  "description": "后台管理系统练习",
+  "main": "app.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "prod": "cross-env NODE_ENV=production nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runjs": "nodemon app.js",
+    "build": "echo %npm_package_config_env%"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@escook/express-joi": "^1.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "config": {
+    "env": "production",
+    "my": "come on!"
+  }
+}
